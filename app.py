@@ -1,12 +1,12 @@
 from flask import Flask, request, jsonify
-from datetime import datetime
+from datetime import datetime, timezone
 
 app = Flask(__name__)
 
 @app.route('/')
 def time_service():
     return jsonify({
-        "timestamp": datetime.utcnow().isoformate() + "Z",
+        "timestamp": datetime.now(timezone.utc).isoformate() + "Z",
         "ip": request.remote_addr
     })
 
