@@ -4,9 +4,9 @@ RUN addgroup --system appgroup && adduser --system --ingroup appuser
 
 WORKDIR /app
 
-COPY requirements.txt
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
-COPY app.py
+COPY app.py .
 
 RUN chown -R appuser:appgroup /app
 USER appuser
