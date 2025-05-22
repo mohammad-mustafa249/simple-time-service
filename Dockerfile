@@ -1,11 +1,5 @@
 FROM python:3.12-slim
 
-RUN addgroup --system appgroup && adduser --system --ingroup appuser
-root@ip-172-31-26-188:~/simple-time-service# cat do
-cat: do: No such file or directory
-root@ip-172-31-26-188:~/simple-time-service# cat Dockerfile 
-FROM python:3.12-slim
-
 # Create system group and user
 RUN addgroup --system appgroup && adduser --system --ingroup appgroup appuser
 
