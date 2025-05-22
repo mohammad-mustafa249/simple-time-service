@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def time_service():
     return jsonify({
-        "timestamp": datetime.now(timezone.utc).isoformate() + "Z",
+        "timestamp": datetime.now(timezone.utc).isoformat() + "Z",
         "ip": request.remote_addr
     })
 
