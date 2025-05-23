@@ -19,6 +19,7 @@ A simple microservice that returns the current timestamp and the client's IP add
 Make sure the following tools are installed:
 
 - [Docker](https://www.docker.com/products/docker-desktop) (v20+ recommended)
+- Docker Desktop
 - Python 3.11+ (optional, for local testing)
 - curl (for quick endpoint testing)
 
